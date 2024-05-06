@@ -1,0 +1,37 @@
+@mixin headingcolor(){
+    color: aqua;
+    
+}
+@mixin textheadingsize(){
+    width: 100%;
+    
+}
+@mixin textheadingheight(){
+    width: 100%;
+    
+}
+@mixin buttonstyle(){
+    border-radius: 6px;
+    height: 100px;
+    width: 100px;
+    
+}
+@mixin drawerbutton(){
+    cursor: pointer;
+
+}
+
+.editor-label {
+    @include headingcolor; // Include the mixin
+    @include textheadingsize;
+  }
+.site-view{
+    @include textheadingheight;
+    @include textheadingsize;
+}
+.buttonstyle{
+    @include buttonstyle();
+}
+.drawer{
+    @include drawerbutton()
+}
