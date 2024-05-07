@@ -3,7 +3,7 @@ import React from "react";
 import ReactDom from "react-dom";
 import "react-modern-drawer/dist/index.css";
 import Builder_header from "../builder_components/builder_header";
-//import "../css/header.scss";
+import "../css/header.scss";
 
 const Builderheader = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -14,9 +14,11 @@ const Builderheader = () => {
     <>
       <section className="builder-header">
         <div className="container-fluid">
-          <div className="row py-2 d-flex justify-content-center text-center">
+          <div className="row py-4 d-flex justify-content-center ">
+            <div className="Builder-header">
+              <p className="editor-label">Website Builder</p>
+            </div>
             <div className="col-8 d-flex justify-content-start py-4">
-              {/* <p className="editor-label">website builder</p> */}
               <div className="site-view">
                 <h1>this will display the site view </h1>
               </div>
@@ -30,7 +32,7 @@ const Builderheader = () => {
                 width="30"
                 height="30"
                 fill="currentColor"
-                class="bi bi-grip-horizontal drawer"
+                className="bi bi-grip-horizontal drawer"
                 viewBox="0 0 16 16"
                 onClick={toggleDrawer}
               >
